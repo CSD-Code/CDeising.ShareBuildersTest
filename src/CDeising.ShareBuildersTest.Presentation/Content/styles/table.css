@@ -1,0 +1,56 @@
+﻿.table-container
+{
+    overflow-x: auto;
+}
+
+.app-table
+{
+    width: 100%;
+    border: 1px solid #eeeeee;
+}
+
+    .app-table tr:first-child
+    {
+        background-color: var(--neutral-300);
+    }
+
+        .app-table tr:first-child th
+        {
+            padding: 1rem !important;
+        }
+
+    .app-table tbody tr
+    {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+        .app-table tbody tr td
+        {
+            padding: 1rem !important;
+            font-size: 0.75rem;
+        }
+
+    .app-table th:nth-last-of-type(3), .app-table th:nth-last-of-type(2)
+    {
+        width: 40%;
+    }
+
+    .app-table th:last-child, .app-table td:nth-last-child(1)
+    {
+        text-align: right;
+        width: 20%;
+    }
+
+    .app-table input[type=image]
+    {
+        height: 16px;
+        width: 16px;
+    }
+
+@media (min-width: 992px)
+{
+    .app-table tbody tr td
+    {
+        font-size: 0.875rem;
+    }
+}
